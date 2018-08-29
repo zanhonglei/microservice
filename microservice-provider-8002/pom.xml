@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>microservice-provider</name>
+	<name>microservice-provider-8002</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
