@@ -40,8 +40,9 @@ public class QuartzScheduler {
         Trigger trigger = TriggerBuilder
                 .newTrigger()
                 .withIdentity(taskId, GROUP)
-                .withSchedule(initSchedule(cycle,cycleContent))
+                .withSchedule(initSchedule(cycle, cycleContent))
                 .startAt(cycleBeginTime)
+                .usingJobData("taskId", taskId)
                 .build();
 
         scheduler.scheduleJob(jobDetail, trigger);
@@ -161,6 +162,9 @@ public class QuartzScheduler {
                 break;
             case "3": //分钟
                 sm.withIntervalInMinutes(Integer.valueOf(cycleContent));
+                break;
+            case "4": //秒 方便测试
+                sm.withIntervalInSeconds(Integer.valueOf(cycleContent));
                 break;
         }
         return sm.repeatForever();

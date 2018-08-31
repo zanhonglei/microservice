@@ -17,7 +17,7 @@ public class MyJob implements Job {
     public void execute(JobExecutionContext context) throws JobExecutionException {
         try {
             Thread.sleep(1000);
-            System.out.println("执行同步任务");
+            System.out.println("执行同步任务" + context.getTrigger().getJobDataMap().get("taskId"));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
