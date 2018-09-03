@@ -12,6 +12,9 @@
         <option value="$PROJECT_DIR$/microservice-provider/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-provider-8001/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-provider-8002/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-common/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-consumer-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-quartz-service/pom.xml" />
       </list>
     </option>
   </component>
