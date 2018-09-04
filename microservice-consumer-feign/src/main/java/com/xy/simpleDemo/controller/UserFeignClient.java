@@ -1,4 +1,4 @@
-package com.xy.controller;
+package com.xy.simpleDemo.controller;
 
 
 import org.springframework.cloud.netflix.feign.FeignClient;
