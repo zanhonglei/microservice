@@ -24,7 +24,7 @@ public class QuartzController {
     public String start1() {
         try {
             //需要注意的是 此处刚执行job，不要马上回去job信息，因为job会在调度器中初始化，创建执行任务周期，如果马上回去job信息可能会NPE
-            quartzScheduler.startJob("123",new Date(),"4","2",MyJob.class);
+            quartzScheduler.startJob("123",new Date(),"4","1",MyJob.class);
         } catch (SchedulerException e) {
             e.printStackTrace();
         }
@@ -33,7 +33,7 @@ public class QuartzController {
     @GetMapping("/start2")
     public String start2() {
         try {
-            quartzScheduler.startJob("123123",new Date(),"4","1",MyJob.class);
+            quartzScheduler.startJob("123123",new Date(),"4","2",MyJob.class);
         } catch (SchedulerException e) {
             e.printStackTrace();
         }

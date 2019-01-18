@@ -161,7 +161,7 @@ public class QuartzScheduler {
                 sm.withIntervalInMinutes(Integer.valueOf(cycleContent) * 24);
                 break;
             case "3": //分钟
-                sm.withIntervalInMinutes(Integer.valueOf(cycleContent));
+                sm.withIntervalInMinutes(Integer.valueOf(cycleContent)*60);
                 break;
             case "4": //秒 方便测试
                 sm.withIntervalInSeconds(Integer.valueOf(cycleContent));
