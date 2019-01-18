@@ -3,19 +3,16 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
-        <option value="$PROJECT_DIR$/mircroservice-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/eureka-server-7002/pom.xml" />
-        <option value="$PROJECT_DIR$/eureka-server-7003/pom.xml" />
-        <option value="$PROJECT_DIR$/microservice-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/eureka-server-7001/pom.xml" />
-        <option value="$PROJECT_DIR$/microservice-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/microservice-provider-8001/pom.xml" />
-        <option value="$PROJECT_DIR$/microservice-provider-8002/pom.xml" />
-        <option value="$PROJECT_DIR$/microservice-common/pom.xml" />
-        <option value="$PROJECT_DIR$/microservice-consumer-feign/pom.xml" />
-        <option value="$PROJECT_DIR$/microservice-quartz-service/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-customer-ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/test/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/test/app/boot/pom.xml" />
+        <option value="$PROJECT_DIR$/test/app/rest/pom.xml" />
+        <option value="$PROJECT_DIR$/test/app/service/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
