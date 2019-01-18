@@ -7,4 +7,4 @@ target/
 logs/
 *.log
 .DS_Store
-.mvn/wrapper
+.mvn/
