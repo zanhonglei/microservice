@@ -44,7 +44,7 @@ public class QuartzController {
     @GetMapping("/start3")
     public String start3() {
         try {
-            quartzScheduler.startJob("33333333333333",new Date(),"4","2",TestJob.class);
+            quartzScheduler.startJob("33333333333333",new Date(),"2","1",TestJob.class);
         } catch (SchedulerException e) {
             e.printStackTrace();
         }
@@ -55,7 +55,7 @@ public class QuartzController {
     public String update3() {
         try {
 //            quartzScheduler.startJob("33333333333333",new Date(),"4","2",TestJob.class);
-            quartzScheduler.modifyJob("33333333333333", new Date(), "4", "4");
+            quartzScheduler.modifyJob("33333333333333", new Date(), "2", "1");
         } catch (SchedulerException e) {
             e.printStackTrace();
         }
