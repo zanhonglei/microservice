@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 /**
  * 使用@FeignClient的configuration属性,指定feign的配置类
  */
-@FeignClient(name = "microservice-provider-8001", configuration = FeignConfigutation.class)
+@FeignClient(name = "microservice-provider-8001", configuration = FeignConfiguration.class)
 public interface UserFeignClient {
 
     /**
