@@ -158,7 +158,7 @@ public class QuartzScheduler {
                 }
                 return cb;
             case "2": // 天
-                sm.withIntervalInMinutes(Integer.valueOf(cycleContent) * 24);
+                sm.withIntervalInHours(Integer.valueOf(cycleContent) * 24);
                 break;
             case "3": //分钟
                 sm.withIntervalInMinutes(Integer.valueOf(cycleContent));

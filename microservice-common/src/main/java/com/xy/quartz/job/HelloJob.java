@@ -6,8 +6,8 @@ import org.quartz.*;
  * @Date: 2018/8/29 19:12
  * @Description:
  */
-// @DisallowConcurrentExecution //告诉Quartz不要并发地执行同一个job定义（这里指特定的job类）的多个实例
-
+@DisallowConcurrentExecution //告诉Quartz不要并发地执行同一个job定义（这里指特定的job类）的多个实例
+@PersistJobDataAfterExecution
 public class HelloJob implements Job {
 
     public void execute(JobExecutionContext context) throws JobExecutionException {
